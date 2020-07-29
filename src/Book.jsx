@@ -1,6 +1,11 @@
 import React from "react";
 
-const Book = ({ title, author, pages, freeBookmark }) => {
+const Book = ({
+  title = "No Title Provided",
+  author = "No Author-",
+  pages = 0,
+  freeBookmark
+}) => {
   return (
     <section>
       <h2>{title}</h2>

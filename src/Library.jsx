@@ -14,6 +14,11 @@ const NotHiring = () => (
 );
 
 class Library extends React.Component {
+  static defaultProps = {
+    books: [
+      { title: "The sun also rises", author: "Ernest Hemingway", pages: "260" }
+    ]
+  };
   state = {
     open: true,
     freeBookmark: true,

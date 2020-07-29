@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import Library from "./Library";
+import FavouriteColorForm from './FavouriteColorForm';
 
 // let skiData = {
 //   total: 50,
@@ -16,13 +17,16 @@ let bookList = [
 export default function App() {
   return (
     <div className="App">
+      <FavouriteColorForm />
       <Library books={bookList} />
+      
       {/* <SkiDayCounter
         total={skiData.total}
         powder={skiData.powder}
         backcountry={skiData.backcountry}
         goal={skiData.goal}
       /> */}
+     
     </div>
   );
 }
