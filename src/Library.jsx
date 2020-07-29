@@ -5,8 +5,13 @@ function Library({ books }) {
   return (
     <div>
       <h1>Welcome to the Library</h1>
-      {books.map(book => (
-        <Book title={book.title} author={book.author} pages={book.pages} />
+      {books.map((book, i) => (
+        <Book
+          key={i}
+          title={book.title}
+          author={book.author}
+          pages={book.pages}
+        />
       ))}
     </div>
   );
